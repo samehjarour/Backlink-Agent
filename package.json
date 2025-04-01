@@ -1,0 +1,41 @@
+{
+	"name": "backlink-outreach-js",
+	"version": "0.0.3",
+	"type": "module",
+	"description": "This is a boilerplate of an Apify actor.",
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"dependencies": {
+		"@apify/tsconfig": "^0.1.0",
+		"@langchain/anthropic": "^0.3.15",
+		"@langchain/community": "^0.3.9",
+		"@langchain/core": "^0.3.15",
+		"@langchain/langgraph": "^0.2.46",
+		"@langchain/openai": "^0.3.11",
+		"apify": "^3.2.6",
+		"hnswlib-node": "^3.0.0",
+		"langchain": "^0.3.4",
+		"openai": "^4.85.3",
+		"prettier": "^3.5.1",
+		"tar": "^6.1.14",
+		"tsx": "^4.6.2",
+		"typescript": "^5.3.3",
+		"zod": "^3.24.2"
+	},
+	"scripts": {
+		"start": "npm run start:dev",
+		"start:prod": "node dist/main.js",
+		"start:dev": "tsx src/main.ts",
+		"build": "tsc",
+		"lint": "eslint ./src --ext .ts",
+		"lint:fix": "eslint ./src --ext .ts --fix",
+		"test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+	},
+	"author": "It's not you it's me",
+	"license": "ISC",
+	"devDependencies": {
+		"@apify/eslint-config": "^0.4.0",
+		"eslint": "^8.57.0"
+	}
+}
